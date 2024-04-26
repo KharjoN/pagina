@@ -1,6 +1,6 @@
 body{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto;
     margin: auto;
     
 }
@@ -134,13 +134,9 @@ body{
     text-decoration: underline;
 }
 footer div {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 19px;
-    text-align: center;
-    padding: 100px;
-    background-color: #c9d2d0;
-    color: #31231e;
-    scroll-snap-type: proximity;
+    padding-top: 60px;
+    padding-bottom: 20px;
+   
 }
 .carta:hover{
     transform:scale(1.1);
@@ -168,3 +164,42 @@ table, th, td {
         transform: scale(0.5);
     }
   }
+  .redes-sociales img {
+    display: flex;
+    flex-direction: right;
+    
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+
+}
+
+footer div .redes{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding: 15px;
+    translate: 80px;
+
+}
+footer .logo{
+    display: grid;
+    translate: 850px -190px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+footer .logo img{
+    background-color: #31231e;
+    padding: auto;
+    border-radius: 50%;
+    background-color: blue;
+}
+footer .pie{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 19px;
+    text-align: center;
+    background-color: #c9d2d0;
+    color: #31231e;
+    display:flex;
+    flex-direction: column;
+}
